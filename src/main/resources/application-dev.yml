@@ -1,0 +1,17 @@
+server:
+  port: 9999
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:root@xxx.xxx.xxx.xxx:27017/admin
+      log-date-path: oplog_timestamp
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: xxx.xxx.xxx.xxx:9300
+      repositories:
+        enabled: true
+
+moses:
+  mongodb:
+    tables: xxx_mongo_table,xxx_mongo_table2
